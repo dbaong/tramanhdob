@@ -34,6 +34,9 @@ section {
 
   cursor: pointer;
   animation: throb 1.5s infinite;
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease,
+              background-color 0.15s ease;
 }
 #startbutton:hover {
   animation: none;
@@ -43,6 +46,9 @@ section {
 
   box-shadow: 6px 6px 0 #1B2CC1;
 }
+#startbutton:active{
+  transform: scale(0.92);
+}
 @keyframes throb {
   0%, 100% {
     transform: scale(1);
@@ -51,4 +57,51 @@ section {
     transform: scale(1.08);
   }
 }
-    
+#gamehall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 8px solid #1B2CC1;
+}    
+#gamehall h1{
+  color: #F10291;
+  font-size: 2.5rem;
+  text-align:center;
+  text-shadow: 4px 4px 0 #1B2CC1;
+  margin-bottom: 40px;
+}
+#quit,
+#continuebutton {
+  padding: 20px 50px;
+  background-color: black;
+  color: white;
+  border: 3px solid #F10291;
+
+  font-family: monospace;
+  font-size: 1.1rem;
+  font-weight:bold;
+  
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease,
+              background-color 0.15s ease;
+  cursor: pointer;
+}
+#continuebutton {
+  background-color: #F10291;
+  color: #000000;
+  animation: throb 1.5s infinite;
+}
+#quit:hover,
+#continuebutton:hover {
+  animation: none;
+  transform: scale(1.10);
+  background-color: #1B2CC1;
+  color: #FFFFFF;
+  box-shadow: 6px 6px 0 #F10291;
+}
+#quit:active,
+#continuebutton:active {
+  transform: scale(0.92);
+}
