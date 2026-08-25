@@ -36,6 +36,8 @@ section {
   animation: throb 1.5s infinite;
 }
 #startbutton:hover {
+  animation: none;
+  transform: scale(1.10);
   background-color: #F10291;
   color: #000000;
 
