@@ -4,9 +4,9 @@
   margin: 0;
 }
 body {
-  background-color: #000000;
+  background-color: #050510;
   color: #ffffff;
-  font-family: monospace;
+  font-family: 'Press Start 2P', cursive;
 }
 section {
   min-height: 100vh;
@@ -18,7 +18,7 @@ section {
   align-items: center;
 }
 #hook h1{
-  color: #F10291;
+  color: #FFFFFF;
   font-size: 3rem;
 }
 #startbutton {
@@ -26,9 +26,9 @@ section {
   padding: 15px 40px;
   background-color: black;
   color: white;
-  border: 3px solid #F10291;
+  border: 4px solid #F10291;
 
-  font-family: monospace;
+  font-family: 'Press Start 2P', cursive;
   font-size: 1.2rem;
   font-weight: bold;
 
@@ -63,13 +63,13 @@ section {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  border: 8px solid #1B2CC1;
+  border: 8px solid #FFFFFF;
 }    
 #gamehall h1{
-  color: #F10291;
-  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-size: 3rem;
   text-align:center;
-  text-shadow: 4px 4px 0 #1B2CC1;
+  
   margin-bottom: 40px;
 }
 #quit,
@@ -79,7 +79,7 @@ section {
   color: white;
   border: 3px solid #F10291;
 
-  font-family: monospace;
+  font-family: 'Press Start 2P', cursive;
   font-size: 1.1rem;
   font-weight:bold;
   
@@ -104,4 +104,35 @@ section {
 #quit:active,
 #continuebutton:active {
   transform: scale(0.92);
+}
+#cakescene {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cake {
+  color: #FFFFFF;
+  font-size: 6rem;
+  border:none;
+  background-color:transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease,
+              background-color 0.15s ease;
+}
+#cake:hover{
+  transform:scale(1.1);
+  color: #1B2CC1;
+  box-shadow: 0 0 20px #F10291;
+}
+#cake:active {
+  transform:scale(0.8) rotate(15deg);
+}
+#cakescene p{
+  font-size:1.5rem;
+  color:#FFFFFF;
+  font-weight: bold;
+  text-align:center;
+  margin-top: 30px;
 }
