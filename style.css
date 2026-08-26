@@ -7,7 +7,7 @@ body {
   background-color: #050510;
   color: #ffffff;
   font-family: 'Jersey 10', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 section {
   min-height: 100vh;
@@ -143,7 +143,8 @@ section {
   display:none;
   position: absolute;
   inset:0;
-  
+  justify-content:center;
+  align-items:center;
 }
 #message {
   display:none;
@@ -166,13 +167,20 @@ section {
     transform: translate(var(--x),100vh) scale(1);
   }
 }
-@keyframes expand{
+@keyframes expandt{
   0%{
     transform:scale(0.1);
   }
   100%{
-    transform: translateY(60px) scale(1.1);
+    transform: translateY(-60px) scale(1.1);
   }
 }
+#celebrate h1{
+  font-size:2rem;
 
+  text-align:center;
+  
+  color: #F10291;
+  text-shadow: 6px 6px 0 #1B2CC1;
+  animation: expandt 0.5s ease;
 }
