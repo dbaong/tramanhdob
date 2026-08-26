@@ -7,6 +7,7 @@ body {
   background-color: #050510;
   color: #ffffff;
   font-family: 'Jersey 10', sans-serif;
+  letter-spacing: 1px;
 }
 section {
   min-height: 100vh;
@@ -20,6 +21,7 @@ section {
 #hook h1{
   color: #FFFFFF;
   font-size: 3rem;
+  letter-sacing:2px;
 }
 #startbutton {
   margin-top: 30px;
@@ -69,7 +71,7 @@ section {
   color: #FFFFFF;
   font-size: 3rem;
   text-align:center;
-  
+  letter-spacing:2px;
   margin-bottom: 40px;
 }
 #quit,
@@ -106,6 +108,7 @@ section {
   transform: scale(0.92);
 }
 #cakescene {
+  position:relative;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -136,9 +139,40 @@ section {
   text-align:center;
   margin-top: 30px;
 }
-#celebration {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#celebrate {
+  display:none;
+  position: absolute;
+  inset:0;
+  
+}
+#message {
+  display:none;
+}
+.falling{
+  animation: fall 4s ease-out;
+  position: absolute;
+  left:50%;
+  right:50%
+}
+@keyframes fall{
+  0%{
+    transform: scale(0.3);
+  }
+ 25%{
+   transform: translate(var(--x),var(--y)) scale(1);
+ }
+  
+  100%{
+    transform: translate(var(--x),100vh) scale(1);
+  }
+}
+@keyframes expand{
+  0%{
+    transform:scale(0.1);
+  }
+  100%{
+    transform: translateY(60px) scale(1.1);
+  }
+}
+
 }
