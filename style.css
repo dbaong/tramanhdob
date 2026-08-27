@@ -7,7 +7,7 @@ body {
   background-color: #050510;
   color: #ffffff;
   font-family: 'Jersey 10', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing:2px;
 }
 section {
   min-height: 100vh;
@@ -19,11 +19,13 @@ section {
   align-items: center;
 }
 #hook h1{
+  letter-spacing:2px;
   color: #FFFFFF;
   font-size: 3rem;
   letter-sacing:2px;
 }
 #startbutton {
+  letter-spacing:2px;
   margin-top: 30px;
   padding: 15px 40px;
   background-color: black;
@@ -68,6 +70,7 @@ section {
   border: 8px solid #FFFFFF;
 }    
 #gamehall h1{
+  letter-spacing:2px;
   color: #FFFFFF;
   font-size: 3rem;
   text-align:center;
@@ -77,6 +80,7 @@ section {
 #quit,
 #continuebutton {
   padding: 20px 50px;
+  letter-spacing:2px;
   background-color: black;
   color: white;
   border: 3px solid #F10291;
@@ -183,4 +187,139 @@ section {
   color: #F10291;
   text-shadow: 6px 6px 0 #1B2CC1;
   animation: expandt 0.5s ease;
+}
+#message{
+  display:none;
+  position:absolute;
+  width:80%;
+  max-width:600px;
+  min-height: 180px;
+  padding:20px;
+  border: 6px solid #F10291;
+  background-color: black;
+  
+}
+#message.open{
+  display:block;
+  animation: opening 0.4s ease-out;
+}
+#message h2{
+  font-size: 1.5rem;
+  font-weight:bold;
+  
+  color: #FFFFFF;
+  font-family: monospace;
+}
+.deco {
+  bottom: 15px;
+  position:absolute;
+  animation: gugugaga 1s ease infinite;
+}
+.deco:nth-of-type(1){
+  right:15px;
+}
+.deco:nth-of-type(2){
+  left:15px;
+}
+#con {
+  display:none;
+  position:absolute;
+  transform: translateX(-50%);
+  bottom:15px;
+  left:50%;
+  font-size:1rem;
+  animation: blink 1.5s ease infinite;
+}
+@keyframes gugugaga{
+  0%,100%{
+    opacity:1;
+  }
+  50%{
+    opacity:0.1;
+  }
+}
+@keyframes opening {
+  0% {
+    transform: scale(0.05);
+  }
+
+  30% {
+    transform: scale(0.05, 1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+#game{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+}
+#choice{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+}
+#game h1{
+  font-size:3rem;
+  color:white;
+  font-weight:bold;
+  margin-bottom:30px;
+  animation:throb 3s ease infinite;
+}
+#game p{
+  color:white;
+  font-size: 1.5rem;
+}
+#me,
+#you,
+#both {
+  padding: 15px 40px;
+  letter-spacing:2px;
+  background-color: black;
+  color: white;
+  border: 3px solid #F10291;
+
+  font-family: 'Jersey 10', sans-serif;
+  font-size: 1.1rem;
+  font-weight:bold;
+  
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease,
+              background-color 0.15s ease;
+  cursor: pointer;
+}
+#me:hover,
+#you:hover,
+#both:hover {
+  animation: none;
+  transform: scale(1.10);
+  background-color: #1B2CC1;
+  color: #FFFFFF;
+  box-shadow: 6px solid #F10291;
+}
+#me:active,
+#you:active,
+#both:active{
+  transform: scale(0.92);
+}
+#me{
+  transform:scale(1.1);
+  animation:throb 3s ease infinite;
+  background-color: #f10291;
+}
+#both{
+  animation:throb 3s ease infinite;
+}
+.response:nth-of-type(1){
+  
 }
