@@ -360,10 +360,10 @@ section {
   letter-spacing: 3px;
 }
 #finale p{
-  font-size: clamp(1rem, 4vw, 6rem);
+  font-size: 2rem;
   color:white;
 }
-#finale:nth-of-type(2){
+#finale p:nth-of-type(2){
   color:red;
   animation:throb 2s ease infinite;
 }
