@@ -354,12 +354,16 @@ section {
   align-items: center;
 }
 #finale h1{
-  font-size: clamp(2rem,20vw,9rem);
+  font-size: clamp(2rem,10vw,9rem);
   color:white;
   font-weight:bold;
   letter-spacing: 3px;
 }
 #finale p{
-  font-size: clamp(1rem, 9vw, 6rem);
+  font-size: clamp(1rem, 4vw, 6rem);
   color:white;
+}
+#finale:nth-of-type(2){
+  color:red;
+  animation:throb 2s ease infinite;
 }
