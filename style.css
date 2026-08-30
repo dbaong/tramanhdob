@@ -66,9 +66,8 @@ section {
 #celebrate,
 #game,
 #finale {
-  display: none;
+  display: flex;
 }
-
 #gamehall.open,
 #cakescene.open,
 #celebrate.open,
