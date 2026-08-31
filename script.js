@@ -1,3 +1,4 @@
+console.log("JS LOADED");
 const hook=document.querySelector("#hook");
 const start=document.querySelector("#startbutton");
 const gamehall= document.querySelector("#gamehall");
