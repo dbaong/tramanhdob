@@ -31,8 +31,8 @@ cake.addEventListener("click",() =>{
   if(clik===10){
     celeb.style.display="flex";
     falling.forEach(icon =>{
-      const x=Math.random() * 300 - 150
-      const y=Math.random() * -150
+      const x=(Math.random() * 0.8 - 0.4) * window.innerWidth
+      const y=Math.random() *50 -150
       icon.style.setProperty("--x",`${x}px`)
       icon.style.setProperty("--y",`${y}px`)
     });
