@@ -9,6 +9,7 @@ const close=document.querySelector("#closepu");
 const cakescene = document.querySelector("#cakescene");
 const cake=document.querySelector("#cake");
 const celeb=document.querySelector("celebrate");
+const falling=document.querySelectorAll(".falling");
 let clik=0;
 start.addEventListener("click",() =>{
   hook.style.display="none";
@@ -29,5 +30,11 @@ cake.addEventListener("click",() =>{
   clik++;
   if(clik===10){
     celeb.style.display="flex";
+    falling.forEach(icon =>{
+      const x=Math.random() * 400 - 200
+      const y=Math.random() * -150
+      icon.style.setProperty("--x",`${x}px`)
+      icon.style.setProperty("--y",`${y}px`)
+    });
   }
 });
