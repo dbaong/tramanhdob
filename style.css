@@ -21,8 +21,9 @@ section {
 #hook h1{
   letter-spacing:2px;
   color: #FFFFFF;
-  font-size: 3rem;
+  font-size: 8rem;
   letter-spacing:2px;
+  margin-bottom:40px;
 }
 #startbutton {
   letter-spacing:2px;
