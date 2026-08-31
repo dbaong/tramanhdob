@@ -7,6 +7,9 @@ const quit=document.querySelector("#quit");
 const ifquit = document.querySelector("#ifquit");
 const close=document.querySelector("#closepu");
 const cakescene = document.querySelector("#cakescene");
+const cake=document.querySelector("#cake");
+const celeb=document.querySelector("celebrate");
+let clik=0;
 start.addEventListener("click",() =>{
   hook.style.display="none";
   gamehall.classList.add("open");
@@ -20,4 +23,11 @@ close.addEventListener("click",() =>{
 conti.addEventListener("click",() => {
   gamehall.classList.remove("open");
   cakescene.classList.add("open");
+});
+cake.addEventListener("click",() =>{
+
+  clik++;
+  if(clik===10){
+    celeb.style.display="flex";
+  }
 });
