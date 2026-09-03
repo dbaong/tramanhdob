@@ -51,7 +51,7 @@ function messa() {
 
         setTimeout(() => {
             messa();
-        }, 50);
+        }, 25);
     } else {
         typing = false;
     }
@@ -102,7 +102,9 @@ you.addEventListener("click",()=>{
 both.addEventListener("click",()=>{
   res[1].classList.add("open")
 })
-res.addEventListener("click",()=>{
-  game.classList.remove("open")
-  finale.classList.remove("open")
-})
+res.forEach(response => {
+    response.addEventListener("click", () => {
+        game.classList.remove("open");
+        finale.classList.add("open");
+    });
+});
