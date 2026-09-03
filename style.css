@@ -204,6 +204,14 @@ section {
   text-shadow: 6px 6px 0 #1B2CC1;
   animation: expandt 0.5s ease;
 }
+#cursor1 {
+    display: inline-block;
+    width: 8px;
+    height: 22px;
+    background: #F10291;
+    margin-left: 5px;
+    vertical-align: -4px;
+    animation: blink 0.7s steps(1) infinite;
 #message{
   display:none;
   position:absolute;
@@ -245,6 +253,9 @@ section {
   left:50%;
   font-size:1rem;
   animation: blink 1.5s ease infinite;
+}
+#con.open{
+  display:block;
 }
 @keyframes gugugaga{
   0%,100%{
@@ -356,7 +367,7 @@ section {
 }
 .response.open {
   display: flex;
-  animation: opening 0.4s ease-out;
+  animation: opening 0.2s ease-out;
 }
 .response h2{
   font-size:2rem;
