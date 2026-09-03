@@ -74,7 +74,7 @@ message.addEventListener("click", () => {
           
       }
       else {
-        message.classList.remove("open");
+        cakescene.classList.remove("open");
         game.classList.add("open")
       }
     }
