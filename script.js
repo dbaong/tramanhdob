@@ -13,6 +13,7 @@ const falling=document.querySelectorAll(".falling");
 const tinnhan=document.querySelector("#tinnhan");
 const deco=document.querySelector(".deco")
 const con=document.querySelector("#con");
+const game=document.querySelector("#game")
 let clik=0;
 
 
@@ -35,13 +36,13 @@ let text=["hilu chăm anhh.",
           "Chúc em tuổi 17 sẽ gặp thật nhiều điều vui trong cuộc sống, ngày càng có thêm nhiều kỷ niệm đáng nhớ với bạn bè và người thân.",
           "Quan trọng hơn, chúc em tuổi mới ngày cảng trổ mã đẹp gái và học giỏi hơn để đậu ULaw và tranh được suất học bổng của trường.",
           "Cuối cùng, chúc em có 1 ngày sinh nhật vui vẻ và tuổi mới vui tươi với ít nỗi buồn hơn!!!"]
-let start = 0;
+let ref = 0;
 let i = 0;
 let typing = true;
 
 function messa() {
-    if (i < text[start].length) {
-        tinnhan.textContent = text[start].slice(0, i + 1);
+    if (i < text[ref].length) {
+        tinnhan.textContent = text[ref].slice(0, i + 1);
         i++;
 
         setTimeout(() => {
@@ -55,14 +56,17 @@ message.addEventListener("click", () => {
 
     if (!typing) {
 
-        start++;
+      ref++;
 
-        if (start < text.length) {
-            i = 0;
-            typing = true;
-            messa();
-        }
-
+      if (ref < text.length) {
+          i = 0;
+          typing = true;
+          messa();
+      }
+      else {
+        message.classList.remove("open");
+        game.classList.add("open")
+      }
     }
 });
 cake.addEventListener("click",() =>{
