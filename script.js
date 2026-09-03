@@ -102,7 +102,7 @@ you.addEventListener("click",()=>{
 both.addEventListener("click",()=>{
   res[1].classList.add("open")
 })
-response.addEventListener("click",()=>{
+res.addEventListener("click",()=>{
   game.classList.remove("open")
   finale.classList.remove("open")
 })
