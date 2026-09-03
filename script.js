@@ -18,6 +18,8 @@ const you=document.querySelector("#you")
 const me=document.querySelector("#me")
 const both=document.querySelector("#both")
 const res=document.querySelectorAll(".response")
+const message = document.querySelector("#message");
+const finale = document.querySelector("#finale");
 let clik=0;
 
 
@@ -53,7 +55,10 @@ function messa() {
             messa();
         }, 25);
     } else {
-        typing = false;
+        typing = false
+        if(ref===text.length-1){
+            con.classList.add("open")
+        }
     }
 }
 message.addEventListener("click", () => {
@@ -66,9 +71,7 @@ message.addEventListener("click", () => {
           i = 0;
           typing = true;
           messa();
-          if(ref===text.length-1){
-            con.classList.add("open")
-          }
+          
       }
       else {
         message.classList.remove("open");
