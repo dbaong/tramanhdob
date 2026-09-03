@@ -231,10 +231,10 @@ section {
   position:absolute;
   animation: gugugaga 1s ease infinite;
 }
-#message.deco:first-of-type{
+#message.deco:nth-of-type(9){
   right:15px;
 }
-#message.deco:last-of-type{
+#message.deco:nth-of-type(10){
   left:15px;
 }
 #con {
