@@ -14,6 +14,10 @@ const tinnhan=document.querySelector("#tinnhan");
 const deco=document.querySelector(".deco")
 const con=document.querySelector("#con");
 const game=document.querySelector("#game")
+const you=document.querySelector("#you")
+const me=document.querySelector("#me")
+const both=document.querySelector("#both")
+const res=document.querySelectorAll(".response")
 let clik=0;
 
 
@@ -62,6 +66,9 @@ message.addEventListener("click", () => {
           i = 0;
           typing = true;
           messa();
+          if(ref===text.length-1){
+            con.classList.add("open")
+          }
       }
       else {
         message.classList.remove("open");
@@ -86,3 +93,16 @@ cake.addEventListener("click",() =>{
     },5000)
   }
 });
+me.addEventListener("click",()=>{
+  res[2].classList.add("open")
+})
+you.addEventListener("click",()=>{
+  res[0].classList.add("open")
+})
+both.addEventListener("click",()=>{
+  res[1].classList.add("open")
+})
+response.addEventListener("click",()=>{
+  game.classList.remove("open")
+  finale.classList.remove("open")
+})
