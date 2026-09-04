@@ -4,10 +4,111 @@
   margin: 0;
 }
 body {
-  background-color: #050510;
+  min-height: 100vh;
+  background-color: #051010;
+  position: relative;
+  overflow: hidden;
   color: #ffffff;
   font-family: 'Jersey 10', sans-serif;
   letter-spacing:2px;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+
+  background-image:
+
+    /* tiny white stars */
+    radial-gradient(circle, #ffffff 0 1px, transparent 1px),
+
+    /* tiny pink stars */
+    radial-gradient(circle, #f10291 0 1px, transparent 1px);
+
+  background-size:
+    47px 53px,
+    83px 71px;
+
+  background-position:
+    12px 8px,
+    37px 29px;
+
+  opacity: 0.7;
+}
+
+
+/* =========================
+   BIG PIXEL SPARKLES
+   ========================= */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+
+  background-image:
+
+    /* sparkle 1 - vertical */
+    linear-gradient(#ffffff, #ffffff),
+
+    /* sparkle 1 - horizontal */
+    linear-gradient(#ffffff, #ffffff),
+
+    /* sparkle 2 - vertical */
+    linear-gradient(#f10291, #f10291),
+
+    /* sparkle 2 - horizontal */
+    linear-gradient(#f10291, #f10291),
+
+    /* tiny square star */
+    linear-gradient(#ffffff, #ffffff),
+
+    /* another tiny square star */
+    linear-gradient(#f10291, #f10291);
+
+  background-size:
+
+    3px 13px,
+    13px 3px,
+
+    3px 11px,
+    11px 3px,
+
+    3px 3px,
+    2px 2px;
+
+  background-position:
+
+    18% 25%,
+    18% 25%,
+
+    78% 18%,
+    78% 18%,
+
+    42% 67%,
+    91% 78%;
+
+  background-repeat: no-repeat;
+
+  opacity: 0.85;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 14ch;
+    }
+}
+
+@keyframes cursor-blink {
+    50% {
+        border-color: transparent;
+    }
 }
 section {
   min-height: 100vh;
@@ -192,7 +293,7 @@ section {
     transform:scale(0.1);
   }
   100%{
-    transform: translateY(-400px) scale(1.1);
+    transform: translateY(-50px) scale(1.1);
   }
 }
 #celebrate h1{
@@ -203,6 +304,9 @@ section {
   color: #F10291;
   text-shadow: 6px 6px 0 #1B2CC1;
   animation: expandt 0.5s ease;
+}
+#tinnhan{
+  display:inline;
 }
 #cursor1 {
     display: inline-block;
@@ -233,17 +337,16 @@ section {
   font-weight:bold;
   
   color: #FFFFFF;
-  font-family: monospace;
 }
-#message.deco {
+#message .deco {
   bottom: 15px;
   position:absolute;
   animation: gugugaga 1s ease infinite;
 }
-#message.deco:nth-of-type(1){
+#message .deco:nth-of-type(1){
   right:15px;
 }
-#message.deco:nth-of-type(2){
+#message .deco:nth-of-type(2){
   left:15px;
 }
 #con {
@@ -358,7 +461,7 @@ section {
   position:absolute;
   max-width:600px;
   width:80%;
-  min-height:180px;
+  min-height:280px;
   padding:20px;
   border: 6px solid #F10291;
   background-color: black;
@@ -385,6 +488,17 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#finale h1,
+#finale p{
+  width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #F10291;
+
+    animation:
+        typing 3s steps(14) forwards,
+        cursor-blink 0.7s steps(1) infinite;
 }
 #finale h1{
   font-size: clamp(2rem,10vw,9rem);
@@ -416,6 +530,17 @@ section {
 #ifquit.open {
   display:flex;
   animation:opening 0.5s ease-out 1;
+}
+#ifquit h2,
+#ifquit p{
+  width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #F10291;
+
+    animation:
+        typing 3s steps(14) forwards,
+        cursor-blink 0.7s steps(1) infinite;
 }
 #ifquit h2{
   font-size: 30px;
