@@ -22,11 +22,7 @@ body {
     }
 }
 
-@keyframes cursor-blink {
-    50% {
-        border-color: transparent;
-    }
-}
+
 section {
   min-height: 100vh;
 }
@@ -420,7 +416,7 @@ section {
   border-right: 4px solid #F10291;
 
   animation:
-      typing 1s steps(14) forwards;
+      typing 1s steps(30, end) ;
 }
 #finale p{
   font-size: 2rem;
@@ -431,7 +427,7 @@ section {
   border-right: 4px solid #F10291;
 
   animation:
-      typing 1s steps(14) forwards
+      typing 1s steps(30, end) 
 }
 #finale p:nth-of-type(2){
   color:red;
@@ -464,7 +460,7 @@ section {
   border-right: 4px solid #F10291;
 
   animation:
-      typing 1s steps(14) forwards;
+      typing 1s steps(30, end) ;
 }
 #ifquit p{
   font-size:1rem;
@@ -473,7 +469,7 @@ section {
   white-space: nowrap;
   border-right: 4px solid #F10291;
 
-  animation:  typing 1s steps(14) forwards;
+  animation:  typing 1s steps(30, end) ;
 }
 #closepu {
   letter-spacing:2px;
