@@ -278,7 +278,7 @@ section {
   max-width:600px;
   min-height: 180px;
   padding:20px;
-  padding-bottom:40px;
+
   border: 6px solid #F10291;
   background-color: black;
   
@@ -297,7 +297,7 @@ section {
   display:flex;
   align-items:flex-end;
   justify-content:center;
-  gap:50px;
+  
 }
 .deco1, .deco2{
   font-size:1rem;
@@ -305,7 +305,12 @@ section {
   position:absolute;
   animation: gugugaga 1s ease infinite;
 }
-
+.deco1{
+  transform: translateX(-75px):
+}
+.deco2{
+  transform: translateX(75px);
+}
 /* #message .deco {
   bottom: 25px;
   position:absolute;
