@@ -2,7 +2,7 @@ const sections=document.querySelectorAll(
   "#hook, #gamehall, #cakescene, #celebrate, #game, #finale"
 )
 sections.forEach(section =>{
-  for(let i=0;i<35;i++){
+  for(let i=0;i<50;i++){
     const star=document.createElement("span")
     star.classList.add("star");
     const size = Math.random()*3 +1;
