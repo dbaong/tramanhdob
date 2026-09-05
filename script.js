@@ -6,7 +6,7 @@ sections.forEach(section =>{
   for(let i=0;i<200;i++){
     const star=document.createElement("span")
     star.classList.add("star");
-    const size = Math.random()*4 +1;
+    const size = Math.random()*4 +2;
     star.style.width=`${size}px`
     star.style.height=`${size}px`
     star.style.left=`${Math.random()*100}%`
