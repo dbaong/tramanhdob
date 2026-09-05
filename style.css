@@ -222,7 +222,11 @@ section {
   display:none;
 }
 .falling{
-  animation: fall 7s ease-out forwards;
+  font-size:2rem;
+  color:#f10291;
+  animation: 
+    fall 7s ease-out forwards,
+    gugugaga 0.1s steps(1) infinite;
   position: absolute;
   left:50%;
 }
@@ -293,16 +297,15 @@ section {
   display:flex;
   align-items:flex-end;
   justify-content:center;
+  gap:50px;
 }
 .deco1, .deco2{
-  left:25px;
+  font-size:1rem;
   bottom:25px;
   position:absolute;
   animation: gugugaga 1s ease infinite;
 }
-.deco2{
-  right:25px;
-}
+
 /* #message .deco {
   bottom: 25px;
   position:absolute;
