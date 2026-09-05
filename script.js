@@ -1,3 +1,4 @@
+console.log("hello world");
 const sections=document.querySelectorAll(
   "#hook, #gamehall, #cakescene, #celebrate, #game, #finale"
 )
