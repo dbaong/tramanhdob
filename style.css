@@ -23,10 +23,9 @@ body {
   background: white;
   
   animation: blinking 1s steps(1) infinite;
-  image-rendering:pixelated;
+  
   pointer-events:none;
 }
-.star.magen{background:#f10291;}
 
 section {
   min-height: 100vh;
@@ -104,16 +103,6 @@ section {
     position: absolute;
     z-index: 0;
     pointer-events: none;
-}
-
-#hook > *,
-#gamehall > *,
-#cakescene > *,
-#celebrate > *,
-#game > *,
-#finale > * {
-    position: relative;
-    z-index: 1;
 }
 #gamehall.open,
 #cakescene.open,
