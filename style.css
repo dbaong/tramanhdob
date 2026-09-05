@@ -95,7 +95,7 @@ section {
 #game,
 #finale {
     position: relative;
-    overflow: hidden;
+    
 }
 #hook > *:not(.star),
 #gamehall > *:not(.star),
@@ -254,7 +254,7 @@ section {
   
   color: #F10291;
   text-shadow: 6px 6px 0 #1B2CC1;
-  animation: expandt 0.5s ease;
+  animation: expandt 0.5s ease forwards;
 }
 #tinnhan{
   display:inline;
@@ -275,6 +275,7 @@ section {
   max-width:600px;
   min-height: 180px;
   padding:20px;
+  padding-bottom:40px;
   border: 6px solid #F10291;
   background-color: black;
   
@@ -290,14 +291,14 @@ section {
   color: #FFFFFF;
 }
 #message .deco {
-  bottom: 15px;
+  bottom: 25px;
   position:absolute;
   animation: gugugaga 1s ease infinite;
 }
-#message .deco:first-of-type(1){
+#message .deco:first-of-type{
   right:25px;
 }
-#message .deco:last-of-type(2){
+#message .deco:last-of-type{
   left:25px;
 }
 #con {
@@ -450,20 +451,15 @@ section {
   text-shadow:0 0 30px #f10291;
   width: 0;
 
-  border-right: 4px solid #F10291;
+  
 
-  animation:
-      typing 1s steps(30, end) ;
 }
 #finale p{
   font-size: 2rem;
   color:white;
   width: 0;
 
-  border-right: 4px solid #F10291;
-
-  animation:
-      typing 1s steps(30, end) 
+  
 }
 #finale p:nth-of-type(2){
   color:red;
@@ -493,7 +489,7 @@ section {
   width: 0;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 4px solid #F10291;
+  
 
   
 }
@@ -502,7 +498,7 @@ section {
   width: 0;
 
   
-  border-right: 4px solid #F10291;
+  
 
   
 }
