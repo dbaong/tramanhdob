@@ -13,15 +13,19 @@ body {
   letter-spacing:2px;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+@keyframes blinking{
+  0%,100%{opacity:1;}
+  50%{opacity:0.3;}
 }
-
+.star{
+  position:absolute;
+  display:block;
+  background: white;
+  animation: blinking 1s steps(1) infinite;
+  image-rendering:pixelated;
+  pointer-events:none;
+}
+.star.magen{background:#f10291;}
 
 section {
   min-height: 100vh;
@@ -76,12 +80,22 @@ section {
     transform: scale(1.08);
   }
 }
+#hook,
+#gamehall,
+#cakescene,
+#celebrate,
+#game,
+#finale {
+    position: relative;
+    overflow: hidden;
+}
 #gamehall,
 #cakescene,
 #celebrate,
 #game,
 #finale {
   display: none;
+  
 }
 #gamehall.open,
 #cakescene.open,
