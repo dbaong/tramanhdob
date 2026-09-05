@@ -289,7 +289,21 @@ section {
   
   color: #FFFFFF;
 }
-#message .deco {
+#message #xam{
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+.deco1, .deco2{
+  left:25px;
+  bottom:25px;
+  position:absolute;
+  animation: gugugaga 1s ease infinite;
+}
+.deco2{
+  right:25%
+}
+/* #message .deco {
   bottom: 25px;
   position:absolute;
   animation: gugugaga 1s ease infinite;
@@ -298,7 +312,7 @@ section {
   right:25px;
 }
 #message .deco:last-of-type{
-  left:25px;
+  left:25px; */
 }
 #con {
   display:none;
@@ -484,16 +498,15 @@ section {
 #ifquit h2{
   font-size: 30px;
   margin-bottom:30px;
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
+  
+  
   
 
   
 }
 #ifquit p{
   font-size:1rem;
-  width: 0;
+  
 
   
   
