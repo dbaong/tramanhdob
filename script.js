@@ -10,9 +10,7 @@ sections.forEach(section =>{
     star.style.height=`${size}px`
     star.style.left=`${Math.random()*100}%`
     star.style.top=`${Math.random()*100}%`
-    if(Math.random()<=0.2){
-    star.classList.add("magen")
-    }
+  
     star.style.animationDelay = `${Math.random()*2}s`
     section.appendChild(star)
   }
