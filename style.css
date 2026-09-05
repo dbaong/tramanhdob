@@ -34,7 +34,7 @@ body {
     transparent 55%
   );
 }
-.star
+
 section {
   min-height: 100vh;
 }
@@ -442,14 +442,13 @@ section {
   align-items: center;
 }
 
-}
+
 #finale h1{
   font-size: clamp(2rem,10vw,9rem);
   color:white;
   font-weight:bold;
   letter-spacing: 3px;
   text-shadow:0 0 30px #f10291;
-  width: 0;
 
   
 
@@ -457,7 +456,7 @@ section {
 #finale p{
   font-size: 2rem;
   color:white;
-  width: 0;
+
 
   
 }
@@ -482,7 +481,7 @@ section {
   animation:opening 0.5s ease-out 1;
 }
 
-}
+
 #ifquit h2{
   font-size: 30px;
   margin-bottom:30px;
