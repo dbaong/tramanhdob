@@ -5,7 +5,7 @@
 }
 body {
   min-height: 100vh;
-  background-color: #051010;
+  background-color: #080616;
   position: relative;
   overflow: hidden;
   color: #ffffff;
@@ -21,6 +21,7 @@ body {
   position:absolute;
   display:block;
   background: white;
+  
   animation: blinking 1s steps(1) infinite;
   image-rendering:pixelated;
   pointer-events:none;
@@ -96,6 +97,23 @@ section {
 #finale {
   display: none;
   
+}
+
+
+.star {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#hook > *,
+#gamehall > *,
+#cakescene > *,
+#celebrate > *,
+#game > *,
+#finale > * {
+    position: relative;
+    z-index: 1;
 }
 #gamehall.open,
 #cakescene.open,
