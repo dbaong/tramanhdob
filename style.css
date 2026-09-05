@@ -303,13 +303,13 @@ section {
   font-size:1rem;
   bottom:25px;
   position:absolute;
-  animation: gugugaga 1s ease infinite;
+  animation: gugugaga 1s linear infinite;
 }
 .deco1{
-  transform: translateX(-75px):
+  left:25px;
 }
 .deco2{
-  transform: translateX(75px);
+  right:25px;
 }
 /* #message .deco {
   bottom: 25px;
