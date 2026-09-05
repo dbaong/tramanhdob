@@ -1,4 +1,23 @@
-console.log("JS LOADED");
+const sections=document.querySelectorAll(
+  "#hook, #gamehall, #cakescene, #celebrate, #game, #finale"
+)
+sections.forEach(section =>{
+  for(let i=0;i<=35;i++){
+    const star=document.createElement("span")
+    star.classList.add("star");
+    const size = Math.random()*3 +1;
+    star.style.width=`${size}px`
+    star.style.height=`${size}px`
+    star.style.left=`${Math.random()*100}%`
+    star.style.top=`${Math.random()*100}%`
+    if(Math.random()<=0.2){
+    star.classList.add("magen")
+    }
+    star.style.animationDelay = `${Math.random()*2}s`
+    section.appendChild("star")
+  }
+  
+})
 const hook=document.querySelector("#hook");
 const start=document.querySelector("#startbutton");
 const gamehall= document.querySelector("#gamehall");
