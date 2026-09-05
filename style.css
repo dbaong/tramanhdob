@@ -25,8 +25,8 @@ body {
   animation: blinking 1s steps(1) infinite;
   z-index:0;
   pointer-events:none;
-  width:5px;
-  height:5px;
+  width:10px;
+  height:10px;
   background: radial-gradient(
     circle,
     white 0% 10%,
@@ -91,7 +91,6 @@ section {
 #hook,
 #gamehall,
 #cakescene,
-#celebrate,
 #game,
 #finale {
     position: relative;
@@ -223,7 +222,7 @@ section {
   display:none;
 }
 .falling{
-  animation: fall 7s ease-out;
+  animation: fall 7s ease-out forwards;
   position: absolute;
   left:50%;
 }
@@ -478,7 +477,7 @@ section {
 }
 #ifquit.open {
   display:flex;
-  animation:opening 0.5s ease-out 1;
+  animation:opening 0.2s ease-out 1;
 }
 
 
