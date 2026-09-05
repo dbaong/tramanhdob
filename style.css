@@ -103,7 +103,7 @@ section {
 #celebrate > *:not(.star),
 #game > *:not(.star),
 #finale > *:not(.star) {
-    position: relative;
+  
     z-index: 1;
 }
 #gamehall,
@@ -295,7 +295,7 @@ section {
   position:absolute;
   animation: gugugaga 1s ease infinite;
 }
-#message .deco:first-of-type{
+#message .deco:nth-of-type(9){
   right:25px;
 }
 #message .deco:last-of-type{
@@ -307,7 +307,7 @@ section {
   transform: translateX(-50%);
   bottom:15px;
   left:50%;
-  font-size:0.5rem;
+  font-size:clamp(0.1rem,30vw,0.5rem);
   animation: blink 1.5s ease infinite;
 }
 #con.open{
