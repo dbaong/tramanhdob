@@ -337,7 +337,7 @@ section {
   left:25px; */
 
 #con {
-  display:none;
+
   position:absolute;
   transform: translateX(-50%);
   pointer-events:none;
@@ -346,9 +346,7 @@ section {
   font-size:clamp(0.1rem,30vw,0.5rem);
   animation: conblink 1.5s linear infinite;
 }
-#con.open{
-  display:block;
-}
+
 @keyframes conblink{
   0%,100%{
     opacity:1;
