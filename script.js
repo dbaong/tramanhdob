@@ -123,9 +123,20 @@ you.addEventListener("click",()=>{
 both.addEventListener("click",()=>{
   res[1].classList.add("open")
 })
-res.forEach(response => {
-    response.addEventListener("click", () => {
-        game.classList.remove("open");
-        finale.classList.add("open");
-    });
-});
+res[2].addEventListener("click",()=>{
+  game.classList.remove("open");
+  finale.classList.add("open");
+})
+res[0].addEventListener("click",()=>{
+  res[0].classList.remove("open")
+})
+res[1].addEventListener("click",()=>{
+  game.classList.remove("open");
+  finale.classList.add("open");
+})
+// res.forEach(response => {
+//     response.addEventListener("click", () => {
+//         game.classList.remove("open");
+//         finale.classList.add("open");
+//     });
+// });
