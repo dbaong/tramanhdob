@@ -326,10 +326,11 @@ section {
   display:none;
   position:absolute;
   transform: translateX(-50%);
+  pointer-events:none;
   bottom:15px;
   left:50%;
   font-size:clamp(0.1rem,30vw,0.5rem);
-  animation: blink 1.5s ease infinite;
+  animation: gugugaga 1.5s linear infinite;
 }
 #con.open{
   display:block;
