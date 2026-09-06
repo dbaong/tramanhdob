@@ -234,25 +234,21 @@ section {
   0%{
     transform: scale(0.3);
   }
- 25%{
+ 100%{
    transform: translate(var(--x),var(--y)) scale(1);
- }
-  
-  100%{
-    transform: translate(var(--x),100vh) scale(1);
-  }
+ 
 }
 @keyframes expandt{
   0%{
     transform:scale(0.1);
   }
   100%{
-    transform: translateY(-200px) scale(1.5);
+    transform: translateY(-200px) scale(1);
   }
 }
 #celebrate h1{
-  font-size:3rem;
-
+  font-size:clamp(1rem,4.5rem,80vw);
+  
   position:fixed;
   
   color: #F10291;
@@ -343,19 +339,7 @@ section {
     opacity:0.1;
   }
 }
-@keyframes opening {
-  0% {
-    transform: scale(0.005);
-  }
 
-  30% {
-    transform: scale(0.005, 1);
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
-}
 @keyframes blink {
   50% {
     opacity: 0;
@@ -501,6 +485,28 @@ section {
 #ifquit.open {
   display:flex;
   animation:opening 0.2s ease-out 1;
+}
+@keyframes opening {
+  0% {
+    transform: scale(0.005);
+  }
+
+  30% {
+    transform: scale(0.005, 1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes closing{
+  0%{transform:scale(1,1);}
+  10%{transform:scale(1.1,1);}
+  90%{transform:scale(0.005,1);}
+  100%{transform:scale(0,0);}
+}
+#ifquit.close {
+  animation:closing 0.2s ease-out 1;
 }
 
 
