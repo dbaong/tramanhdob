@@ -49,7 +49,10 @@ quit.addEventListener("click",() => {
   ifquit.classList.add("open");
 });
 close.addEventListener("click",() =>{
-  ifquit.classList.remove("open");
+  ifquit.classList.add("close");
+  setTimeout(()=>{
+    ifquit.classList.remove("open");
+  },300)
 });
 conti.addEventListener("click",() => {
   gamehall.classList.remove("open");
@@ -103,8 +106,8 @@ cake.addEventListener("click",() =>{
   if(clik===10){
     celeb.style.display="flex";
     falling.forEach(icon =>{
-      const x=(Math.random() * 0.8 - 0.4) * window.innerWidth
-      const y=Math.random() *50 -150
+      const x=(Math.random() * 2 - 1) * window.innerWidth
+      const y=(Math.random() *2-1) * window.innerHeight
       icon.style.setProperty("--x",`${x}px`)
       icon.style.setProperty("--y",`${y}px`)
     });
