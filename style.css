@@ -254,7 +254,7 @@ section {
   }
  100%{
    transform: translate(var(--x),var(--y)) scale(1);
- 
+ }
 }
 @keyframes expandt{
   0%{
