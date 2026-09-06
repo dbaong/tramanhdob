@@ -52,7 +52,8 @@ close.addEventListener("click",() =>{
   ifquit.classList.add("close");
   setTimeout(()=>{
     ifquit.classList.remove("open");
-  },300)
+    ifquit.classList.remove("close");
+  },200)
 });
 conti.addEventListener("click",() => {
   gamehall.classList.remove("open");
