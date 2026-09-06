@@ -12,7 +12,25 @@ body {
   font-family: 'Jersey 10', sans-serif;
   letter-spacing:2px;
 }
+@keyframes opening {
+  0% {
+    transform: scale(0.005);
+  }
 
+  30% {
+    transform: scale(0.005, 1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes closing{
+  0%{transform:scale(1,1);}
+  10%{transform:scale(1.1,1);}
+  90%{transform:scale(0.005,1);}
+  100%{transform:scale(0,0);}
+}
 @keyframes blinking{
   0%,100%{opacity:1;}
   50%{opacity:0.3;}
@@ -247,7 +265,7 @@ section {
   }
 }
 #celebrate h1{
-  font-size:clamp(1rem,4.5rem,80vw);
+  font-size:clamp(1rem,10vw+0.5rem,4.5rem);
   
   position:fixed;
   
@@ -486,25 +504,7 @@ section {
   display:flex;
   animation:opening 0.2s ease-out 1;
 }
-@keyframes opening {
-  0% {
-    transform: scale(0.005);
-  }
 
-  30% {
-    transform: scale(0.005, 1);
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
-}
-@keyframes closing{
-  0%{transform:scale(1,1);}
-  10%{transform:scale(1.1,1);}
-  90%{transform:scale(0.005,1);}
-  100%{transform:scale(0,0);}
-}
 #ifquit.close {
   animation:closing 0.2s ease-out 1;
 }
