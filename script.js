@@ -41,10 +41,9 @@ const finale = document.querySelector("#finale");
 let clik=0;
 function end(A){
   A.classList.add("close");
-  setTimeout(()=>{
-    A.classList.remove("open");
-    A.classList.remove("close");
-  },200)
+  A.addEventListener("animationend",()=>{
+    A.classList.remove("open","close")
+  },{once:true})
 }
 
 start.addEventListener("click",() =>{
