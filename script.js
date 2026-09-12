@@ -39,7 +39,13 @@ const res=document.querySelectorAll(".response")
 const message = document.querySelector("#message");
 const finale = document.querySelector("#finale");
 let clik=0;
-
+function end(A){
+  A.classList.add("close");
+  setTimeout(()=>{
+    A.classList.remove("open");
+    A.classList.remove("close");
+  },200)
+}
 
 start.addEventListener("click",() =>{
   hook.style.display="none";
@@ -79,7 +85,8 @@ function messa() {
     } else {
         typing = false
         if(ref===text.length-1){
-            con.classList.add("open")
+          
+          con.classList.add("open")
         }
     }
 }
@@ -96,8 +103,11 @@ message.addEventListener("click", () => {
           
       }
       else {
-        cakescene.classList.remove("open");
-        game.classList.add("open")
+        end(message)
+        setTimeout(()=>{
+          cakescene.classList.remove("open");
+          game.classList.add("open")
+        },200)
       }
     }
 });
@@ -132,11 +142,18 @@ res[2].addEventListener("click",()=>{
   finale.classList.add("open");
 })
 res[0].addEventListener("click",()=>{
-  res[0].classList.remove("open")
+  end(res[0])
 })
+let cli=0;
 res[1].addEventListener("click",()=>{
-  game.classList.remove("open");
-  finale.classList.add("open");
+  cli++
+  if(cli<2){
+    end(res[1])
+  }
+  else if(cli===2){
+    game.classList.remove("open");
+    finale.classList.add("open");
+  }
 })
 // res.forEach(response => {
 //     response.addEventListener("click", () => {
