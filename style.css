@@ -301,6 +301,9 @@ section {
   display:block;
   animation: opening 0.4s ease-out;
 }
+#message.close{
+  animation:closing 0.2s ease-out 1;
+}
 #message h2{
   font-size: 1.5rem;
   font-weight:bold;
@@ -454,6 +457,9 @@ section {
 .response.open {
   display: flex;
   animation: opening 0.2s ease-out;
+}
+.response.close{
+  animation:closing 0.2s ease-out 1;
 }
 .response h2{
   font-size:2rem;
