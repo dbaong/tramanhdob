@@ -9,7 +9,7 @@ body {
   position: relative;
   overflow: hidden;
   color: #ffffff;
-  font-family: 'pixell', sans-serif;
+  font-family: 'Jersey 10', sans-serif;
   letter-spacing:2px;
 }
 @font-face{
@@ -280,6 +280,8 @@ section {
 }
 #tinnhan{
   display:inline;
+  font-size:0.8rem;
+  font-family:"pixell";
 }
 #cursor1 {
     display: inline-block;
@@ -297,7 +299,7 @@ section {
   max-width:600px;
   min-height: 180px;
   padding:20px;
-
+  padding-bottom:40px;
   border: 6px solid #F10291;
   background-color: black;
   
