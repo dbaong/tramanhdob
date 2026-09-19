@@ -12,11 +12,7 @@ body {
   font-family: 'Jersey 10', sans-serif;
   letter-spacing:2px;
 }
-@font-face{
-  font-family:"pixell";
-  src: url("kvn-97.ttf") format("truetype");
-  font-style:normal;
-}
+
 @keyframes opening {
   0% {
     transform: scale(0.005);
@@ -334,19 +330,9 @@ section {
 .deco2{
   right:25px;
 }
-/* #message .deco {
-  bottom: 25px;
-  position:absolute;
-  animation: gugugaga 1s ease infinite;
-}
-#message .deco:nth-of-type(9){
-  right:25px;
-}
-#message .deco:last-of-type{
-  left:25px; */
 
 #con {
-
+  display:none;
   position:absolute;
   transform: translateX(-50%);
   pointer-events:none;
