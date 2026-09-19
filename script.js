@@ -64,11 +64,11 @@ conti.addEventListener("click",() => {
   gamehall.classList.remove("open");
   cakescene.classList.add("open");
 });
-let text=["hilu chăm anhh.",
-          "Hôm nay 30/9 là sinh nhật của Chăm Anhhh.",
-          "Chúc em tuổi 17 sẽ gặp thật nhiều điều vui trong cuộc sống, ngày càng có thêm nhiều kỷ niệm đáng nhớ với bạn bè và người thân.",
-          "Quan trọng hơn, chúc em tuổi mới ngày cảng trổ mã đẹp gái và học giỏi hơn để đậu ULaw và tranh được suất học bổng của trường.",
-          "Cuối cùng, chúc em có 1 ngày sinh nhật vui vẻ và tuổi mới vui tươi với ít nỗi buồn hơn!!!"]
+let text=["hilu cham anhh.",
+          "Hom nay 30/9 la sinh nhat cua Cham Anhhh.",
+          "Chuc em tuoi 17 se gap that nhieu đieu vui trong cuoc song, ngay cang co them nhieu ky niem dang nho voi ban be va nguoi than.",
+          "Quan trong hon, chuc em tuoi moi ngay cang tro nen dep gai và hoc sieu gioi hon de dau nganh Luat ULaw và tranh duoc suat hoc bong cua truong.",
+          "Cuoi cung, chuc em co 1 ngay sinh nhat vui ve va vui tuoi với it noi buon hon o tuoi 17!!!"]
 let ref = 0;
 let i = 0;
 let typing = true;
