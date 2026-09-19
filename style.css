@@ -78,7 +78,7 @@ section {
   color: white;
   border: 4px solid #F10291;
 
-  
+  font-family: 'Jersey 10', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
 
@@ -170,7 +170,7 @@ section {
   background-color: black;
   color: white;
   border: 3px solid #F10291;
-
+  font-family: 'Jersey 10', sans-serif;
   
   font-size: 1.1rem;
   font-weight:bold;
