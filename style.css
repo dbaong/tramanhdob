@@ -12,7 +12,12 @@ body {
   font-family: 'Jersey 10', sans-serif;
   letter-spacing:2px;
 }
-
+@font-face{
+  font-family: "tititi";
+  src: url("mojangles-vietnamese.otf") format("opentype");
+  font-weight:normal;
+  font-style:normal;
+}
 @keyframes opening {
   0% {
     transform: scale(0.005);
@@ -236,6 +241,8 @@ section {
   inset:0;
   justify-content:center;
   align-items:center;
+  width:100;
+  overflow:hidden;
 }
 #message {
   display:none;
@@ -266,7 +273,9 @@ section {
   }
 }
 #celebrate h1{
-  font-size:5rem;
+  font-size:clamp(2.5rem,10vw,5rem);
+  max-width:100%;
+  overflow-wrap: break-word;
   
   position:fixed;
   
@@ -277,6 +286,7 @@ section {
 #tinnhan{
   display:inline;
   font-size:0.8rem;
+  font-family:"tititi",sans-serif;
 }
 #cursor1 {
     display: inline-block;
